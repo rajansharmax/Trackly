@@ -79,7 +79,7 @@ export const addNewTaskHelper = (
     setNewTaskContent: React.Dispatch<React.SetStateAction<string>>,
     setIsAddingTask: React.Dispatch<React.SetStateAction<string | null>>
 ) => {
-    const newTaskId = `task-${Object.keys(data.tasks).length + 1}`;
+    const newTaskId = `task-${Object.keys(data.tasks).length + 1 + Math.random()}`;
     const newTask: Task = { id: newTaskId, content: newTaskContent || 'New Task' };
     const updatedTasks = { ...data.tasks, [newTaskId]: newTask };
 
@@ -107,7 +107,7 @@ export const addNewColumnHelper = (
     setNewColumnTitle: React.Dispatch<React.SetStateAction<string>>,
     setIsAddingColumn: React.Dispatch<React.SetStateAction<boolean>>
 ) => {
-    const newColumnId = `column-${Object.keys(data.columns).length + 1}`;
+    const newColumnId = `column-${Object.keys(data.columns).length + 1 + Math.random()}`;
     const newColumn: Column = { id: newColumnId, title: newColumnTitle || 'New Column', taskIds: [] };
 
     setData({
