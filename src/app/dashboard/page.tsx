@@ -26,9 +26,9 @@ const Dashboard = () => {
 
     return (
         <div className="bg-gray-100 min-h-screen flex flex-col p-4">
-            <h1 className="text-2xl font-bold text-center mb-6 text-indigo-600">Trackly Board</h1>
+            <h1 className="text-2xl font-bold text-center mb-4 text-indigo-600">Trackly Board</h1>
 
-            <div className="flex flex-wrap justify-start gap-4 overflow-y-auto min-h-[calc(100vh-120px)]">
+            <div className="flex flex-wrap justify-start gap-4 overflow-y-auto min-h-[calc(100vh-150px)]">
                 <DragDropContext onDragEnd={onDragEnd}>
                     <Droppable droppableId="all-columns" direction="horizontal" type="column">
                         {(provided) => (
