@@ -1,4 +1,4 @@
-## Preview  -> [Trackly](https://trackly-board.vercel.app/)
+## Preview  -> [Trackly](https://trackly-up.vercel.app/)
 
 ## Description
 Trackly is a smart and simple project board designed to help you track progress, stay organized, and ensure tasks get done.
